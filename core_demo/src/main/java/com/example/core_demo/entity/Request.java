@@ -12,8 +12,13 @@ public class Request {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String bankAccount;
+
+    @Column(nullable = false)
     private String securitiesAccount;
+
+    @Column(nullable = false)
     private BigDecimal amount;
     private String status;
 
